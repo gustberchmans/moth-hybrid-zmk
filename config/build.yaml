@@ -1,0 +1,6 @@
+---
+include:
+  - board: seeeduino_xiao_ble
+    shield: moth_hybrid_left
+  - board: seeeduino_xiao_ble
+    shield: moth_hybrid_right

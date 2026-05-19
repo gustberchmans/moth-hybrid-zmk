@@ -1,0 +1,5 @@
+config SHIELD_MOTH_HYBRID_LEFT
+    def_bool $(shields_list_contains,moth_hybrid_left)
+
+config SHIELD_MOTH_HYBRID_RIGHT
+    def_bool $(shields_list_contains,moth_hybrid_right)
