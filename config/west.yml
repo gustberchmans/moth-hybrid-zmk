@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: YOUR_GITHUB_USERNAME
+      url-base: https://github.com/YOUR_GITHUB_USERNAME
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-component-xiao-ble-plus
+      remote: YOUR_GITHUB_USERNAME
+      revision: main
   self:
     path: config

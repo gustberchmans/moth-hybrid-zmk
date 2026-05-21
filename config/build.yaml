@@ -1,5 +1,6 @@
+---
 include:
-  - board: xiao_ble_plus
+  - board: xiao_ble_plus//zmk
     shield: moth_hybrid_left
-  - board: xiao_ble_plus
+  - board: xiao_ble_plus//zmk
     shield: moth_hybrid_right

@@ -1,25 +1,21 @@
+/*
+ * Moth Hybrid - Right half (5 rows x 9 cols)
+ */
 #include "moth_hybrid.dtsi"
 
 &default_transform {
-    col-offset = <8>;
+    col-offset = <7>;
 };
 
 &kscan0 {
-    row-gpios
-        = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pin 11
-        , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pin 10
-        , <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pin 9
-        , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pin 8
-        , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pin 23 (P1.00)
-        ;
-
-    col-gpios
-        = <&gpio0 3  GPIO_ACTIVE_HIGH> // Pin 1
-        , <&gpio0 28 GPIO_ACTIVE_HIGH> // Pin 2
-        , <&gpio0 29 GPIO_ACTIVE_HIGH> // Pin 3
-        , <&gpio0 4  GPIO_ACTIVE_HIGH> // Pin 4
-        , <&gpio0 5  GPIO_ACTIVE_HIGH> // Pin 5
-        , <&gpio1 11 GPIO_ACTIVE_HIGH> // Pin 6
-        , <&gpio1 12 GPIO_ACTIVE_HIGH> // Pin 7
-        ;
+    col-gpios =
+        <&xiao_d 0  GPIO_ACTIVE_HIGH>,
+        <&xiao_d 1  GPIO_ACTIVE_HIGH>,
+        <&xiao_d 2  GPIO_ACTIVE_HIGH>,
+        <&xiao_d 3  GPIO_ACTIVE_HIGH>,
+        <&xiao_d 4  GPIO_ACTIVE_HIGH>,
+        <&xiao_d 5  GPIO_ACTIVE_HIGH>,
+        <&xiao_d 6  GPIO_ACTIVE_HIGH>,
+        <&xiao_d 11 GPIO_ACTIVE_HIGH>,
+        <&xiao_d 12 GPIO_ACTIVE_HIGH>;
 };
