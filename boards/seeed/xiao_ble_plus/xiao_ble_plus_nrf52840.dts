@@ -129,3 +129,7 @@ xiao_spi: &spi0 {};
 
 &usbd { status = "okay"; };
 &gpiote { status = "okay"; };
+
+&adc {
+    status = "okay";
+};
