@@ -9,7 +9,7 @@ manifest:
       remote: gustberchmans
       revision: main
       import: app/west.yml
-    - name: zmk-component-xiao-ble-plus
+    - name: moth-hybrid-zmk
       remote: gustberchmans
       revision: main
   self:
