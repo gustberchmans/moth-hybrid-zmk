@@ -63,11 +63,11 @@
             <18 0 &gpio1 5 0>,   /* D18 - P1.05 (MISO1) */
             <19 0 &gpio1 7 0>;   /* D19 - P1.07 (MOSI1) */
     };
-
-    xiao_serial: &uart0 {};
-    xiao_i2c: &i2c0 {};
-    xiao_spi: &spi0 {};
 };
+
+xiao_serial: &uart0 {};
+xiao_i2c: &i2c0 {};
+xiao_spi: &spi0 {};
 
 &flash0 {
     partitions {
