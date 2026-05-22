@@ -5,7 +5,7 @@ manifest:
     - name: gustberchmans
       url-base: gustberchmans
   projects:
-    - name: zmk
+    - name: moth-hybrid-zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
