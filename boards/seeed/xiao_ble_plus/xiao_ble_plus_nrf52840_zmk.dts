@@ -1,0 +1,15 @@
+/*
+ * ZMK variant for XIAO nRF52840 Plus
+ */
+#include "xiao_ble_plus_nrf52840.dts"
+
+/ {
+    chosen {
+        zmk,battery = &vbatt;
+    };
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+    };
+};
+
+&uart0 { status = "disabled"; };
