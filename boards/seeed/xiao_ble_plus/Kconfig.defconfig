@@ -1,4 +1,6 @@
 if BOARD_XIAO_BLE_PLUS
+
 config BOARD
     default "xiao_ble_plus"
+
 endif
