@@ -3,10 +3,10 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: gustberchmans
-      url-base: gustberchmans
+      url-base: https://github.com/gustberchmans
   projects:
     - name: moth-hybrid-zmk
-      remote: zmkfirmware
+      remote: gustberchmans
       revision: main
       import: app/west.yml
     - name: zmk-component-xiao-ble-plus
